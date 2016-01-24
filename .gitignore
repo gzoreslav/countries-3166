@@ -1,0 +1,6 @@
+node_modules/
+coverage/
+unit-test/
+.idea/
+.DS_STORE
+.gitignore~

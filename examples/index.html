@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Country codes examples</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Country codes usage example</h1>
+
+        <p>import countries from 'countries-3166';</p>
+
+        <p><span>/* Alpha-3 (default) */</span><br/>
+        countries.values(); <span>//returns countries data (object) <a href="#" id="default">run</a></span><br/>
+        countries.toArray(); <span>//returns countries data (array) <a href="#" id="array">run</a></span></p>
+
+        <p><span>/* Alpha-2 */</span><br/>
+        countries.alpha2().values(); <span>//returns countries alpha-2 data (object) <a href="#" id="a2">run</a></span><br/>
+        countries.alpha2().toArray(); <span>//returns countries alpha-2 data (array) <a href="#" id="a2-array">run</a></span></p>
+
+        <p><span>/* Translations */</span><br/>
+        countries.translate('UKR').values();
+            <span>//returns translated countries data (object) <a href="#" id="ukr">run</a></span><br/>
+        countries.translate('UKR').alpha2().toArray();
+            <span>//returns countries translated alpha-2 data (array) <a href="#" id="ukr-a2">run</a></span><br/>
+        countries.translate('RU').alpha2().values();
+            <span>returns countries translated alpha-2 data (object) <a href="#" id="ru-a2-array">run</a></span>
+
+        <p><span>/* Sorting */</span><br/>
+        countries.sortByKey().values();
+            <span>//returns sorted by key countries data (object) <a href="#" id="keysort">run</a></span><br/>
+        countries.translate('UKR').sortByName().toArray();
+            <span>//returns sorted by name translated countries data (object) <a href="#" id="namesort">run</a></span><br/>
+        <span>//NOTE: Object's order may displays wrong in console</span>
+        </p>
+
+        <em>* See output in console</em>
+    </div>
+
+    <script src="./dist/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    margin: 30px 60px;
+    background-color: #f8fcf8;
+    font-family: "Courier New";
+}
+
+h1 {
+    color: #2F6FAD;
+}
+
+
+p {
+    color: #0d3349;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+}
+
+p > span {
+    color: rgba(40, 95, 238, 0.91);
+    font-weight: normal;
+}
+
+a, a:visited, a:active {
+    color: darkorange;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+em {
+    border-top: 1px solid #2F6FAD;
+}
