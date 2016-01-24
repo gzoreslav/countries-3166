@@ -19,27 +19,27 @@ Open ./examples/index.html
 
 > import countries from 'countries-3166';
 
-### Alpha-3 (default)
+> ### Alpha-3 (default)
 
 > countries.values(); //returns countries data (object)
 > countries.toArray(); //returns countries data (array)
 
-### Alpha-2
+> ### Alpha-2
 
 > countries.alpha2().values(); //returns countries alpha-2 data (object)
 > countries.alpha2().toArray(); //returns countries alpha-2 data (array)
 
-### Translations */</span><br/>
+> ### Translations
 
 > countries.translate('UKR').values(); //returns translated countries data (object)
 > countries.translate('UKR').alpha2().toArray(); //returns countries translated alpha-2 data (array)
 > countries.translate('UA').alpha2().values(); //returns countries translated alpha-2 data (object)
 
-### Sorting */</span><br/>
+> ### Sorting
 
 > countries.sortByKey().values(); //returns sorted by key countries data (object)
 > countries.translate('UKR').sortByName().toArray(); //returns sorted by name translated countries data (object)
-#### //NOTE: Object's order may displays wrong in console</span>
+> ##### NOTE: Object's order may displays wrong in console</span>
 
 ## Tests
 
