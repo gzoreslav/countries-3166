@@ -12,7 +12,8 @@ lodash
 
 ## Examples
 
-Open ./examples/index.html
+see ./examples/index.html
+https://rawgit.com/gzoreslav/countries-3166/master/examples/index.html#
 > grunt example - to build examples
 
 ## Usage
