@@ -1,5 +1,8 @@
 # countries-3166
 
+[![NPM version][npm-image]][npm-url]
+[![Download Count][downloads-image]][downloads-url]
+
 Country codes library (ISO 3166, alpha2 and alpha3)
 
 ## Dependencies
