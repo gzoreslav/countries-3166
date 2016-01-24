@@ -3,7 +3,7 @@ import data from './data.js';
 import alpha2 from './alpha2.js';
 import translation from './translation/index.js';
 
-export default Countries {
+export default class Countries {
 
     constructor() {
         this.data = _.cloneDeep(data);
