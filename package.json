@@ -1,11 +1,14 @@
 {
   "name": "countries-3166",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Country codes library (ISO 3166)",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
+  },
+  "babel": {
+    "presets": ["es2015"]
   },
   "keywords": [
     "iso-3166",
