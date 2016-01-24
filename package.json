@@ -1,6 +1,6 @@
 {
   "name": "countries-3166",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Country codes library (ISO 3166)",
   "main": "lib/index.js",
   "scripts": {
