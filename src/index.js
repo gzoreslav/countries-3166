@@ -66,4 +66,6 @@ class Countries {
     }
 
 }
-export default new Countries();
+
+const countries = new Countries();
+export countries;
