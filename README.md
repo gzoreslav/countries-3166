@@ -1,7 +1,5 @@
 # countries-3166
 
-[![npm version][npm-image]][https://www.npmjs.com/package/countries-3166]
-
 Country codes library (ISO 3166, alpha2 and alpha3)
 
 ## Dependencies
@@ -15,7 +13,9 @@ lodash
 ## Examples
 
 see ./examples/index.html
+
 https://rawgit.com/gzoreslav/countries-3166/master/examples/index.html#
+
 > grunt example - to build examples
 
 ## Usage
