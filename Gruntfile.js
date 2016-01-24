@@ -12,19 +12,7 @@ module.exports = function (grunt) {
                     ]
                 },
                 files: {
-                    './dist/build.js': ['./src/index.js']
-                }
-            },
-            example: {
-                options: {
-                    transform: [
-                        ['babelify', {
-                            "presets": ["es2015"]
-                        }]
-                    ]
-                },
-                files: {
-                    './examples/dist/index.js': ['./examples/src/examples.js']
+                    './examples/build.js': ['./examples/examples.js']
                 }
             }
         }
@@ -32,6 +20,5 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks("grunt-browserify");
 
-    grunt.registerTask("build", ["browserify:dist"]);
-    grunt.registerTask("example", ["browserify:example"]);
+    grunt.registerTask("example", ["browserify"]);
 };
