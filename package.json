@@ -1,11 +1,11 @@
 {
   "name": "countries-3166",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Country codes library (ISO 3166)",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
+    "compile": "babel --experimental --optional runtime -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "babel": {
     "presets": ["es2015"]
