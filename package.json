@@ -1,10 +1,11 @@
 {
   "name": "countries-3166",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Country codes library (ISO 3166)",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
   },
   "keywords": [
     "iso-3166",
@@ -28,6 +29,8 @@
   },
   "devDependencies": {
     "babel": "^6.3.26",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
     "babel-preset-es2015": "^6.3.13",
     "babelify": "^7.2.0",
     "grunt": "^0.4.5",
