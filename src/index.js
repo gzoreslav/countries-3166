@@ -68,4 +68,4 @@ class Countries {
 }
 
 const countries = new Countries();
-export countries;
+export const countries;
