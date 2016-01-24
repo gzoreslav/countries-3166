@@ -1,7 +1,6 @@
 # countries-3166
 
-[![npm version][npm-image]][npm-url]
-[![Downloads][downloads-image]][downloads-url]
+[![npm version][npm-image]][https://www.npmjs.com/package/countries-3166]
 
 Country codes library (ISO 3166, alpha2 and alpha3)
 
