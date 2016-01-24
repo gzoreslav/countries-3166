@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                     ]
                 },
                 files: {
-                    './dist/index.js': ['./src/index.js']
+                    './dist/build.js': ['./src/index.js']
                 }
             },
             example: {
