@@ -50,3 +50,8 @@ https://rawgit.com/gzoreslav/countries-3166/master/examples/index.html#
 ## Tests
 
 TODO
+
+[npm-image]: https://img.shields.io/npm/v/countries-3166.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/countries-3166
+[downloads-image]: http://img.shields.io/npm/dm/countries-3166.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/countries-3166
