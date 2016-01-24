@@ -2,7 +2,7 @@
   "name": "countries-3166",
   "version": "0.0.2",
   "description": "Country codes library (ISO 3166)",
-  "main": "dist/build.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
