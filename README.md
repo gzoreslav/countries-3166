@@ -6,7 +6,7 @@
 Country codes library ([ISO 3166, alpha2 and alpha3](https://en.wikipedia.org/wiki/ISO_3166-1)). All data were get from [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 Benefits:
- - usefull "chain" using _countries.alpha2().sortByName().toArray()_;
+ - usefull "chain" using _countries.alpha2().translate('UA').sortByName().toArray()_;
  - output like object or array
  - alpha-2 transformation
  - sorting
