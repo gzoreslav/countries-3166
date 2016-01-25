@@ -3,14 +3,25 @@
 [![NPM version][npm-image]][npm-url]
 [![Download Count][downloads-image]][downloads-url]
 
-Country codes library (ISO 3166, alpha2 and alpha3)
+Country codes library ([ISO 3166, alpha2 and alpha3](https://en.wikipedia.org/wiki/ISO_3166-1)). All data were get from [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1).
 
-https://en.wikipedia.org/wiki/ISO_3166-1
+Benefits:
+ - usefull "chain" using _countries.alpha2().translate('UA').sortByName().toArray()_;
+ - output like object or array
+ - alpha-2 transformation
+ - sorting by code or country name
+ - translation
+ - favorite countries
+
+Supported languages:
+ - english (default)
+ - ukrainian (ua, ukr)
 
 ## Changelog
 
-0.0.18 - add Ukrainian language support (UA, UKR); fix minor bugs
-0.0.16 - first working release
+ - 0.0.19 - fix sorting for locales, add favorites method
+ - 0.0.18 - add Ukrainian language support (UA, UKR); fix minor bugs
+ - 0.0.16 - first working release
 
 ## Installation
 
@@ -149,7 +160,22 @@ countries.translate('UKR').sortByKey().values();
 //object {AUS: "Австралія", AUT: "Австрія", AZE: "Азербайжан", …}
 ```
 
-TODO
+#### favorites(countries)
+
+Put your favorite countries at the beginning. If you need sorted data and your countries first, use _sort_ then _favorites_
+
+_Arguments:_
+countries: array of countries codes or string code if one country needed
+
+_Returns:_
+(Object): countries object
+
+_Example:_
+```js
+countries.favorites(['UA', 'FR']).values();
+
+//object {UKR: "Ukraine", FRA: "France", AFG: "Afghanistan", …}
+```
 
 ## Examples
 
@@ -177,6 +203,10 @@ countries.translate('UA').alpha2().values(); //returns countries translated alph
 countries.sortByKey().values(); //returns sorted by key countries data (object)
 countries.translate('UKR').sortByName().toArray(); //returns sorted by name translated countries data (object)
 //NOTE: Object's order may displays wrong in console
+
+/* Favorite Countries */
+
+countries.translate('UKR').sortByName().favorites('UKR').values(); //returns sorted by countries data with Ukraine country at the first place (object)
 
 /* Set default data */
 

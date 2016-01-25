@@ -1,5 +1,7 @@
 import countries from '../src/index.js';
 
+window.countries = countries;
+
 document.getElementById('default').onclick = () => {
     console.info('=== alpha-3 / object ===');
     countries.init();
@@ -41,13 +43,21 @@ document.getElementById('ukr-a2').onclick = () => {
 //sort
 
 document.getElementById('keysort').onclick = () => {
-    console.info('=== alpha-3 / sort by key / object ===');
+    console.info('=== alpha-3 / sorted by key / object ===');
     countries.init();
     console.log(countries.sortByKey().values());
 };
 
 document.getElementById('namesort').onclick = () => {
-    console.info('=== alpha-3 / sort by name / object ===');
+    console.info('=== alpha-3 / sorted by name / object ===');
     countries.init();
     console.log(countries.translate('UKR').sortByName().toArray());
+};
+
+//favorites
+
+document.getElementById('fav').onclick = () => {
+    console.info('=== alpha-3 / translated / sorted by name / favarite country "Ukraine" / object ===');
+    countries.init();
+    console.log(countries.translate('UKR').sortByName().favorites('UKR').values());
 };

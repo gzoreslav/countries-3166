@@ -10,6 +10,8 @@
     <div id="container">
         <h1>Country codes usage example</h1>
 
+        <h5>windows.countries available in console for test purposes</h5>
+
         <p>import countries from 'countries-3166';</p>
 
         <p><span>/* Alpha-3 (default) */</span><br/>
@@ -34,6 +36,11 @@
         countries.translate('UKR').sortByName().toArray();
             <span>//returns sorted by name translated countries data (object) <a href="#" id="namesort">run</a></span><br/>
         <span>//NOTE: Object's order may displays wrong in console</span>
+        </p>
+
+        <p><span>/* Favorite Countries */</span><br/>
+        countries.translate('UKR').sortByName().favorites('UKR').values();
+            <span>//returns sorted by countries data with Ukraine country at the first place (object) <a href="#" id="fav">run</a></span>
         </p>
 
         <em>* See output in console</em>

@@ -7,6 +7,8 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+window.countries = _index2.default;
+
 document.getElementById('default').onclick = function () {
     console.info('=== alpha-3 / object ===');
     _index2.default.init();
@@ -48,15 +50,23 @@ document.getElementById('ukr-a2').onclick = function () {
 //sort
 
 document.getElementById('keysort').onclick = function () {
-    console.info('=== alpha-3 / sort by key / object ===');
+    console.info('=== alpha-3 / sorted by key / object ===');
     _index2.default.init();
     console.log(_index2.default.sortByKey().values());
 };
 
 document.getElementById('namesort').onclick = function () {
-    console.info('=== alpha-3 / sort by name / object ===');
+    console.info('=== alpha-3 / sorted by name / object ===');
     _index2.default.init();
     console.log(_index2.default.translate('UKR').sortByName().toArray());
+};
+
+//favorites
+
+document.getElementById('fav').onclick = function () {
+    console.info('=== alpha-3 / translated / sorted by name / favarite country "Ukraine" / object ===');
+    _index2.default.init();
+    console.log(_index2.default.translate('UKR').sortByName().favorites('UKR').values());
 };
 
 },{"../src/index.js":6}],2:[function(require,module,exports){
@@ -15049,28 +15059,39 @@ var Countries = function () {
             return this;
         }
     }, {
-        key: '_sort',
-        value: function _sort(i) {
-            this.data = _lodash2.default.cloneDeep(_lodash2.default.mapValues(_lodash2.default.mapKeys(_lodash2.default.sortBy(_lodash2.default.map(this.data, function (value, key) {
-                return [key, value];
-            }), function (item) {
-                return item[i];
-            }), function (value) {
+        key: '_arrayToObject',
+        value: function _arrayToObject(arr) {
+            return _lodash2.default.cloneDeep(_lodash2.default.mapValues(_lodash2.default.mapKeys(arr, function (value) {
                 return value[0];
             }), function (value) {
                 return value[1];
             }));
         }
     }, {
+        key: '_to2Array',
+        value: function _to2Array() {
+            return _lodash2.default.map(this.data, function (value, key) {
+                return [key, value];
+            });
+        }
+    }, {
+        key: '_sort',
+        value: function _sort(i) {
+            var arr = this._to2Array();
+            return this._arrayToObject(arr.sort(function (a, b) {
+                return a[i].toLowerCase().localeCompare(b[i].toLowerCase());
+            }));
+        }
+    }, {
         key: 'sortByKey',
         value: function sortByKey() {
-            this._sort(0);
+            this.data = this._sort(0);
             return this;
         }
     }, {
         key: 'sortByName',
         value: function sortByName() {
-            this._sort(1);
+            this.data = this._sort(1);
             return this;
         }
     }, {
@@ -15079,6 +15100,25 @@ var Countries = function () {
             this.data = _lodash2.default.mapKeys(this.data, function (value, key) {
                 return _alpha3.default[key] || key;
             });
+            return this;
+        }
+    }, {
+        key: 'favorites',
+        value: function favorites(countries) {
+            countries = _lodash2.default.isArray(countries) ? countries : [countries];
+            var arr = this._to2Array();
+            _lodash2.default.forEachRight(countries, function (c) {
+                c = c.length === 2 ? c.toUpperCase() : _alpha3.default[c.toUpperCase()];
+                var i = _lodash2.default.findIndex(arr, function (item) {
+                    var key = item[0].length === 2 ? item[0] : _alpha3.default[item[0]];
+                    return c === key;
+                });
+                if (i >= 0) {
+                    arr.unshift(arr[i]);
+                    arr.slice(i, 1);
+                }
+            });
+            this.data = this._arrayToObject(arr);
             return this;
         }
     }]);
