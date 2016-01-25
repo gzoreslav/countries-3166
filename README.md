@@ -166,7 +166,7 @@ countries.translate('UKR').sortByKey().values();
 
 #### favorites(countries)
 
-Put your favorite countries at the beginning. If you need sorted data and your countries first, use _sort_ then _favorites_
+Put your favorite countries at the beginning. Usually uses after sort.
 
 _Arguments:_
 countries: array of countries codes or string code if one country needed
