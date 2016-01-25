@@ -9,8 +9,8 @@ https://en.wikipedia.org/wiki/ISO_3166-1
 
 ## Changelog
 
-0.0.18 - add Ukrainian language support (UA, UKR); fix minor bugs
-0.0.16 - first working release
+ - 0.0.18 - add Ukrainian language support (UA, UKR); fix minor bugs
+ - 0.0.16 - first working release
 
 ## Installation
 
