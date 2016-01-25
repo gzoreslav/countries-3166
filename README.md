@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Download Count][downloads-image]][downloads-url]
 
-Country codes library ([ISO 3166, alpha2 and alpha3](https://en.wikipedia.org/wiki/ISO_3166-1))
+Country codes library ([ISO 3166, alpha2 and alpha3](https://en.wikipedia.org/wiki/ISO_3166-1)). All data were get from [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 Supported languages:
  - english (default)
