@@ -9,7 +9,7 @@ Benefits:
  - usefull "chain" using _countries.alpha2().translate('UA').sortByName().toArray()_;
  - output like object or array
  - alpha-2 transformation
- - sorting by key or country name
+ - sorting by code or country name
  - translation
 
 Supported languages:
