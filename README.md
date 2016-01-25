@@ -125,7 +125,7 @@ _Returns:_
 
 _Example:_
 ```js
-countries.alpha2().sortByKey().values();
+countries.sortByKey().values();
 
 //object {ABW: "Aruba", AFG: "Afghanistan", AGO: "Angola", AIA: "Anguilla", ALA: "Åland Islands"…}
 ```
