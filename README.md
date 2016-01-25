@@ -10,6 +10,37 @@ https://en.wikipedia.org/wiki/ISO_3166-1
 ## Installation
 
     $ npm install countries-3166
+    
+## Methods
+
+### data
+
+Object row data property _(by default: alpha-3, english language, no sort)_. Not recommended to use it directly. Methods below modified this property. If you need return *data* to default state after some manipulations, use _init()_ method;
+
+_Example:_
+```js
+countries.data;
+
+//object {AFG: "Afghanistan", ALA: "Åland Islands", …}
+```
+
+### values()
+
+Returns data object for using. Should be the last method in the chain;
+
+_Returns:_
+(Object): countries.data (by default: alpha-3, english language, no sort)
+
+_Example:_
+```js
+countries.values();
+
+//object {AFG: "Afghanistan", ALA: "Åland Islands", …}
+```
+
+### values()
+_Returns:_
+(Object): countries.data (by default: alpha-3, english language, no sort)
 
 ## Examples
 
@@ -43,9 +74,9 @@ countries.translate('UKR').sortByName().toArray(); //returns sorted by name tran
 countries.init(); //reset countris data to default state
 ```
 
-https://rawgit.com/gzoreslav/countries-3166/master/examples/index.html#
+Check [example page](https://rawgit.com/gzoreslav/countries-3166/master/examples/index.html)
 
-More Demos can be found in the [examples](https://github.com/gzoreslav/countries-3166/master/examples) directory.
+More Demos can be found in the [examples](https://github.com/gzoreslav/countries-3166/tree/master/examples) directory.
 
 > grunt example - to build examples
 
