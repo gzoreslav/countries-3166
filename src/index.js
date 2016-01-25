@@ -29,6 +29,7 @@ class Countries {
     }
 
     translate(lang) {
+        lang = lang.toUpperCase();
         const transl = translation[lang.length == 2 ? lang : alpha2[lang]] || null;
         if (!transl) return this;
         this.data = _.mapValues(this.data, (value, key) => key.length === 3 ?

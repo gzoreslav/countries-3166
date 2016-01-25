@@ -35,13 +35,7 @@ document.getElementById('ukr').onclick = () => {
 document.getElementById('ukr-a2').onclick = () => {
     console.info('=== alpha-2 / translated / array ===');
     countries.init();
-    console.log(countries.translate('UKR').alpha2().toArray());
-};
-
-document.getElementById('ru-a2-array').onclick = () => {
-    console.info('=== alpha-2 / translated / object ===');
-    countries.init();
-    console.log(countries.translate('RU').alpha2().values());
+    console.log(countries.translate('ua').alpha2().toArray());
 };
 
 //sort

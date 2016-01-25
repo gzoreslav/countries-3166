@@ -7,6 +7,11 @@ Country codes library (ISO 3166, alpha2 and alpha3)
 
 https://en.wikipedia.org/wiki/ISO_3166-1
 
+## Changelog
+
+0.0.18 - add Ukrainian language support (UA, UKR); fix minor bugs
+0.0.16 - first working release
+
 ## Installation
 
     $ npm install countries-3166
@@ -182,7 +187,8 @@ Check [example page](https://rawgit.com/gzoreslav/countries-3166/master/examples
 
 More Demos can be found in the [examples](https://github.com/gzoreslav/countries-3166/tree/master/examples) directory.
 
-> grunt example - to build examples
+_Build examples:_
+    $ grunt example
 
 ## Tests
 
