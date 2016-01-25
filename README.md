@@ -111,9 +111,37 @@ _Returns:_
 
 _Example:_
 ```js
-countries.alpha2().values();
+countries.translate('UA').values();
 
 //object {{AFG: "Афганістан"}, {ALA: "Аландські острови"}, …}
+```
+
+#### sortByKey()
+
+Sort data by key. If you need alpha-2 format sorted, use _alpha2()_ method before sort.
+
+_Returns:_
+(Object): countries object
+
+_Example:_
+```js
+countries.alpha2().sortByKey().values();
+
+//object {ABW: "Aruba", AFG: "Afghanistan", AGO: "Angola", AIA: "Anguilla", ALA: "Åland Islands"…}
+```
+
+#### sortByName()
+
+Sort data by country name. If you need translated format sorted, use _translate(lang)_ method before sort.
+
+_Returns:_
+(Object): countries object
+
+_Example:_
+```js
+countries.translate('UKR').sortByKey().values();
+
+//object {AUS: "Австралія", AUT: "Австрія", AZE: "Азербайжан", …}
 ```
 
 TODO
