@@ -85,6 +85,39 @@ Modified countries.data to {{AFG: "Afghanistan"}, {ALA: "Åland Islands"}, …}
 */
 ```
 
+#### alpha2()
+
+Modified data to alpha-2 format
+
+_Returns:_
+(Object): countries object
+
+_Example:_
+```js
+countries.alpha2().values();
+
+//object {{AF: "Afghanistan"}, {AX: "Åland Islands"}, …}
+```
+
+#### translate(lang)
+
+Translate data to appropriate language
+
+_Arguments:_
+lang: 2 or 3-length char of language. Examples: 'FR', 'UKR'
+
+_Returns:_
+(Object): countries object
+
+_Example:_
+```js
+countries.alpha2().values();
+
+//object {{AFG: "Афганістан"}, {ALA: "Аландські острови"}, …}
+```
+
+TODO
+
 ## Examples
 
 ```js
