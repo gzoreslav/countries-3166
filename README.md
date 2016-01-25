@@ -13,7 +13,7 @@ https://en.wikipedia.org/wiki/ISO_3166-1
     
 ## How to use?
 
-Library written to use it like chain. All methods modified _this.data_ attribute and returns _this_. It allows to use chain for transforming data in what you need. These metods should be the last ones: _values()_ and _toArray()_. See usage example below:
+Library written to use it like chain. All methods (except _values()_ and _toArray()_) modified _this.data_ attribute and returns _this_. It allows to use chain for transforming data in what you need. These metods should be the last ones: _values()_ and _toArray()_. See usage example below:
 
 ```js
 import countries from 'countries-3166';
