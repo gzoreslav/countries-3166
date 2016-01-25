@@ -1,6 +1,8 @@
 # countries-3166
 
 [![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][daviddm-url]][daviddm-image]
 [![Download Count][downloads-image]][downloads-url]
 
 Country codes library ([ISO 3166, alpha2 and alpha3](https://en.wikipedia.org/wiki/ISO_3166-1)). All data were get from [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1).
@@ -237,3 +239,7 @@ Package is in development state. Feel free to open pull request and/or propouse 
 [npm-url]: https://npmjs.org/package/countries-3166
 [downloads-image]: http://img.shields.io/npm/dm/countries-3166.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/countries-3166
+[travis-url]: https://travis-ci.org/metasansana/caribbean-countries
+[travis-image]: https://travis-ci.org/metasansana/caribbean-countries.svg?branch=master
+[daviddm-url]: https://david-dm.org/metasansana/caribbean-countries.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/metasansana/caribbean-countries
