@@ -25,7 +25,7 @@ countries.alpha2().sortByName().toArray();
     
 #### data attribute
 
-Object row data property _(by default: alpha-3, english language, no sort)_. Not recommended to use it directly. Methods below modified this property. If you need return *data* to default state after some manipulations, use _init()_ method;
+Object row data property _(by default: alpha-3, english language, no sort)_. Not recommended to use it directly. Chain methods modified this property. If you need return *data* to default state after some manipulations, use _init()_ method;
 
 _Example:_
 ```js
@@ -34,7 +34,7 @@ countries.data;
 //object {AFG: "Afghanistan", ALA: "Åland Islands", …}
 ```
 
-### Methods
+### Return methods
 
 #### values()
 
@@ -62,6 +62,27 @@ _Example:_
 countries.toArray();
 
 //array [{AFG: "Afghanistan"}, {ALA: "Åland Islands"}, …]
+```
+
+### Chain methods
+
+All these methods modified _this.data_ and returns _this_. Allowed to use in chain.
+
+#### init()
+
+Reset state to default raw data (alpha-3, english language, no sort).
+
+_Returns:_
+(Object): countries object
+
+_Example:_
+```js
+countries.init();
+
+/*
+Returns (Object) countries
+Modified countries.data to {{AFG: "Afghanistan"}, {ALA: "Åland Islands"}, …}
+*/
 ```
 
 ## Examples
