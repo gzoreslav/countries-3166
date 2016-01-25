@@ -26,7 +26,7 @@ Supported languages:
 ## Installation
 
     $ npm install countries-3166
-    
+ 
 ## How to use?
 
 Library written to use it like chain. All methods (except _values()_ and _toArray()_) modified _this.data_ attribute and returns _this_. It allows to use chain for transforming data in what you need. These metods should be the last ones: _values()_ and _toArray()_. See usage example below:
@@ -34,6 +34,10 @@ Library written to use it like chain. All methods (except _values()_ and _toArra
 ```js
 import countries from 'countries-3166';
 
+/*
+Modified data to alpha-2 format, then sort them by country name,
+and returns data array
+*/
 countries.alpha2().sortByName().toArray();
 
 //array [{AF: "Afghanistan"}, {AX: "Åland Islands"}, …]
@@ -143,7 +147,7 @@ _Example:_
 ```js
 countries.sortByKey().values();
 
-//object {ABW: "Aruba", AFG: "Afghanistan", AGO: "Angola", AIA: "Anguilla", ALA: "Åland Islands"…}
+//object {ABW: "Aruba", AFG: "Afghanistan", AGO: "Angola", AIA: "Anguilla", …}
 ```
 
 #### sortByName()
@@ -218,6 +222,7 @@ Check [example page](https://rawgit.com/gzoreslav/countries-3166/master/examples
 More Demos can be found in the [examples](https://github.com/gzoreslav/countries-3166/tree/master/examples) directory.
 
 _Build examples:_
+
     $ grunt example
 
 ## Tests
