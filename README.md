@@ -11,9 +11,19 @@ https://en.wikipedia.org/wiki/ISO_3166-1
 
     $ npm install countries-3166
     
-## Methods
+## How to use?
 
-### data
+Library written to use it like chain. All methods modified _this.data_ attribute and returns _this_. It allows to use chain for transforming data in what you need. These metods should be the last ones: _values()_ and _toArray()_. See usage example below:
+
+```js
+import countries from 'countries-3166';
+
+countries.alpha2().sortByName().toArray();
+
+//array [{AF: "Afghanistan"}, {AX: "Åland Islands"}, …]
+```
+    
+#### data attribute
 
 Object row data property _(by default: alpha-3, english language, no sort)_. Not recommended to use it directly. Methods below modified this property. If you need return *data* to default state after some manipulations, use _init()_ method;
 
@@ -24,7 +34,9 @@ countries.data;
 //object {AFG: "Afghanistan", ALA: "Åland Islands", …}
 ```
 
-### values()
+### Methods
+
+#### values()
 
 Returns data object for using. Should be the last method in the chain;
 
@@ -38,9 +50,19 @@ countries.values();
 //object {AFG: "Afghanistan", ALA: "Åland Islands", …}
 ```
 
-### values()
+#### toArray()
+
+Returns data arrayt for using. Should be the last method in the chain;
+
 _Returns:_
-(Object): countries.data (by default: alpha-3, english language, no sort)
+(Array): countries.data (by default: alpha-3, english language, no sort)
+
+_Example:_
+```js
+countries.toArray();
+
+//array [{AFG: "Afghanistan"}, {ALA: "Åland Islands"}, …]
+```
 
 ## Examples
 
