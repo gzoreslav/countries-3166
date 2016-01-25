@@ -193,7 +193,7 @@ More Demos can be found in the [examples](https://github.com/gzoreslav/countries
 
 _Build examples:_
 
-   $ grunt example
+    $ grunt example
 
 ## Tests
 
