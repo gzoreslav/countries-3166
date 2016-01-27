@@ -7,7 +7,12 @@
     "compile": "babel --experimental --optional runtime -d lib/ src/",
     "prepublish": "npm run compile",
     "test": "mocha",
-    "test-travis": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha -- --recursive"
+    "test-travis": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   },
   "keywords": [
     "iso-3166",
