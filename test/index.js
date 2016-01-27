@@ -30,7 +30,7 @@ describe('Countries data', function(){
         assert.equal(countries.translate('UA').values().UKR, 'Україна');
         assert.equal(countries.translate('ukr').values().UKR, 'Україна');
         assert.equal(countries.translate('ua').values().UKR, 'Україна');
-        assert.equal(countries.translate('usa').values().UKR, 'США');
+        assert.equal(countries.translate('usa').values().USA, 'США');
     });
 
     it('should not translate to', function(){
