@@ -22,7 +22,7 @@ Supported languages:
 ## Changelog
 
  - 0.0.19 - fix sorting for locales, add favorites method
- - 0.0.18 - add Ukrainian language support (UA, UKR); fix minor bugs
+ - 0.0.18 - add Ukrainian language translations (UA, UKR); fix minor bugs
  - 0.0.16 - first working release
 
 ## Installation
@@ -62,10 +62,8 @@ countries.data;
 
 Returns data object for using. Should be the last method in the chain;
 
-_Returns:_
-(Object): countries.data (by default: alpha-3, english language, no sort)
+**Returns:** (Object): countries.data (by default: alpha-3, english language, no sort)
 
-_Example:_
 ```js
 countries.values();
 
@@ -76,10 +74,8 @@ countries.values();
 
 Returns data arrayt for using. Should be the last method in the chain;
 
-_Returns:_
-(Array): countries.data (by default: alpha-3, english language, no sort)
+**Returns:** (Array): countries.data (by default: alpha-3, english language, no sort)
 
-_Example:_
 ```js
 countries.toArray();
 
@@ -94,10 +90,8 @@ All these methods modified _this.data_ and returns _this_. Allowed to use in cha
 
 Reset state to default raw data (alpha-3, english language, no sort).
 
-_Returns:_
-(Object): countries object
+**Returns:** (Object): countries object
 
-_Example:_
 ```js
 countries.init();
 
@@ -111,27 +105,22 @@ Modified countries.data to {{AFG: "Afghanistan"}, {ALA: "Åland Islands"}, …}
 
 Modified data to alpha-2 format
 
-_Returns:_
-(Object): countries object
+**Returns:** (Object): countries object
 
-_Example:_
 ```js
 countries.alpha2().values();
 
 //object {{AF: "Afghanistan"}, {AX: "Åland Islands"}, …}
 ```
 
-#### translate(lang)
+#### translate(lang_code)
 
 Translate data to appropriate language
 
-_Arguments:_
-lang: 2 or 3-length char of language. Examples: 'FR', 'UKR'
+**Arguments:** lang_code: 2 or 3-length language code. Examples: 'FR', 'UKR'
 
-_Returns:_
-(Object): countries object
+**Returns:** (Object): countries object
 
-_Example:_
 ```js
 countries.translate('UA').values();
 
@@ -142,10 +131,8 @@ countries.translate('UA').values();
 
 Sort data by key. If you need alpha-2 format sorted, use _alpha2()_ method before sort.
 
-_Returns:_
-(Object): countries object
+**Returns:** (Object): countries object
 
-_Example:_
 ```js
 countries.sortByKey().values();
 
@@ -156,10 +143,8 @@ countries.sortByKey().values();
 
 Sort data by country name. If you need translated format sorted, use _translate(lang)_ method before sort.
 
-_Returns:_
-(Object): countries object
+**Returns:** (Object): countries object
 
-_Example:_
 ```js
 countries.translate('UKR').sortByKey().values();
 
@@ -170,13 +155,10 @@ countries.translate('UKR').sortByKey().values();
 
 Put your favorite countries at the beginning. Usually uses after sort.
 
-_Arguments:_
-countries: array of countries codes or string code if one country needed
+**Arguments:** countries: array of countries codes or string code if one country needed
 
-_Returns:_
-(Object): countries object
+**Returns:** (Object): countries object
 
-_Example:_
 ```js
 countries.favorites(['UA', 'FR']).values();
 
