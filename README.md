@@ -222,9 +222,9 @@ Package is in development state. Feel free to open pull request and/or propouse 
 [npm-url]: https://npmjs.org/package/countries-3166
 [downloads-image]: http://img.shields.io/npm/dm/countries-3166.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/countries-3166
-[travis-url]: https://travis-ci.org/metasansana/caribbean-countries
-[travis-image]: https://travis-ci.org/metasansana/caribbean-countries.svg?branch=master
+[travis-url]: https://travis-ci.org/metasansana/countries-3166
+[travis-image]: https://travis-ci.org/metasansana/countries-3166.svg?branch=master
 [daviddm-url]: https://david-dm.org/gzoreslav/countries-3166.svg?theme=shields.io
 [daviddm-image]: https://david-dm.org/gzoreslav/countries-3166
 [coveralls-image]: https://img.shields.io/coveralls/gzoreslav/countries-3166.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/gzoreslav>/countries-3166
+[coveralls-url]: https://coveralls.io/r/gzoreslav/countries-3166
