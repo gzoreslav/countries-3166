@@ -21,7 +21,8 @@ Supported languages:
 
 ## Changelog
 
- - 0.0.19 - fix sorting for locales, add favorites method
+ - 0.0.20 - modified _toArray_ method to be more useful
+ - 0.0.19 - fix sorting for locales, add _favorites_ method
  - 0.0.18 - add Ukrainian language translations (UA, UKR); fix minor bugs
  - 0.0.16 - first working release
 
@@ -78,7 +79,7 @@ Returns data arrayt for using. Should be the last method in the chain;
 ```js
 countries.toArray();
 
-//array [{AFG: "Afghanistan"}, {ALA: "Åland Islands"}, …]
+//array [{code: "AFG", name: "Afghanistan"}, {code: "ALA", name: "Åland Islands"}, …]
 ```
 
 ### Chain methods
@@ -109,7 +110,7 @@ Modified data to alpha-2 format
 ```js
 countries.alpha2().values();
 
-//object {{AF: "Afghanistan"}, {AX: "Åland Islands"}, …}
+//object {AF: "Afghanistan", AX: "Åland Islands", …}
 ```
 
 #### translate(lang_code)
@@ -123,7 +124,7 @@ Translate data to appropriate language
 ```js
 countries.translate('UA').values();
 
-//object {{AFG: "Афганістан"}, {ALA: "Аландські острови"}, …}
+//object {AFG: "Афганістан", ALA: "Аландські острови", …}
 ```
 
 #### sortByKey()

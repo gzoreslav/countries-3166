@@ -22,9 +22,7 @@ class Countries {
         return _.map(
             this.data,
             (value, key) => {
-                const item = {};
-                item[key] = value;
-                return item;
+                return {code: key, name: value};
             });
     }
 
