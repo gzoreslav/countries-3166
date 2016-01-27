@@ -2,6 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][daviddm-url]][daviddm-image]
 [![Download Count][downloads-image]][downloads-url]
 
@@ -225,3 +226,5 @@ Package is in development state. Feel free to open pull request and/or propouse 
 [travis-image]: https://travis-ci.org/metasansana/caribbean-countries.svg?branch=master
 [daviddm-url]: https://david-dm.org/gzoreslav/countries-3166.svg?theme=shields.io
 [daviddm-image]: https://david-dm.org/gzoreslav/countries-3166
+[coveralls-image]: https://img.shields.io/coveralls/gzoreslav/countries-3166.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/gzoreslav>/countries-3166
