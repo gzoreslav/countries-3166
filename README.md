@@ -44,7 +44,7 @@ and returns data array
 */
 countries.alpha2().sortByName().toArray();
 
-//array [{AF: "Afghanistan"}, {AX: "Åland Islands"}, …]
+//array [{code: "AF", name: "Afghanistan"}, {code: "AX", name: "Åland Islands"}, …]
 ```
     
 #### data attribute
