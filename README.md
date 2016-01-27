@@ -49,7 +49,6 @@ countries.alpha2().sortByName().toArray();
 
 Object row data property _(by default: alpha-3, english language, no sort)_. Not recommended to use it directly. Chain methods modified this property. If you need return *data* to default state after some manipulations, use _init()_ method;
 
-_Example:_
 ```js
 countries.data;
 
