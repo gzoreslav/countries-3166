@@ -1,10 +1,11 @@
 # countries-3166
 
 [![NPM version][npm-image]][npm-url]
+[![Download Count][downloads-image]][downloads-url]
+
 [![Build Status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][daviddm-url]][daviddm-image]
-[![Download Count][downloads-image]][downloads-url]
 
 Country codes library ([ISO 3166, alpha2 and alpha3](https://en.wikipedia.org/wiki/ISO_3166-1)). All data were get from [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1).
 
@@ -22,7 +23,7 @@ Supported languages:
 
 ## Changelog
 
- - 0.0.20 - modified _toArray_ method to be more useful; add tests
+ - 0.0.21 - modified _toArray_ method to be more useful; add tests
  - 0.0.19 - fix sorting for locales, add _favorites_ method
  - 0.0.18 - add Ukrainian language translations (UA, UKR); fix minor bugs
  - 0.0.16 - first working release
