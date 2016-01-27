@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "babel --experimental --optional runtime -d lib/ src/",
     "prepublish": "npm run compile",
-    "test": "mocha --reporter spec --compilers js:babel-core/register",
+    "test": "mocha",
     "test-travis": "babel-node ./node_modules/.bin/isparta cover _mocha"
   },
   "keywords": [
