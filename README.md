@@ -226,5 +226,5 @@ Package is in development state. Feel free to open pull request and/or propouse 
 [travis-image]: https://travis-ci.org/gzoreslav/countries-3166.svg?branch=master
 [daviddm-url]: https://david-dm.org/gzoreslav/countries-3166.svg?theme=shields.io
 [daviddm-image]: https://david-dm.org/gzoreslav/countries-3166
-[coveralls-image]: https://img.shields.io/coveralls/gzoreslav/countries-3166.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/gzoreslav/countries-3166
+[coveralls-image]: https://coveralls.io/repos/github/gzoreslav/countries-3166/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/gzoreslav/countries-3166?branch=master
