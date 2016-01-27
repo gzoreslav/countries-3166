@@ -11,7 +11,7 @@ describe('Countries data', function(){
         assert.equal(countries.data.UKR, 'Ukraine');
 	});
 
-	it('should return default countries data like object', function(){
+	it('should return default countries data like object a', function(){
         assert.equal(countries.values().USA, 'United States of America');
         assert.equal(countries.values().UKR, 'Ukraine');
 	});

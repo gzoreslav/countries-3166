@@ -13,5 +13,5 @@ cache:
   directories:
   - node_modules
 sudo: required
-script: npm test
+script: npm run test-travis
 after_script: "npm install coveralls@2 && cat ./coverage/lcov.info | coveralls"

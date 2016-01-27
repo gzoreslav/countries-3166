@@ -7,7 +7,7 @@
     "compile": "babel --experimental --optional runtime -d lib/ src/",
     "prepublish": "npm run compile",
     "test": "mocha",
-    "test-travis": "babel-node ./node_modules/.bin/isparta cover _mocha"
+    "test-travis": "node ./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover _mocha"
   },
   "keywords": [
     "iso-3166",
