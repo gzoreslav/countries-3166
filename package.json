@@ -7,7 +7,7 @@
     "compile": "babel --experimental --optional runtime -d lib/ src/",
     "prepublish": "npm run compile",
     "test": "mocha --reporter spec --compilers js:babel-core/register",
-    "test-travis": "node ./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover _mocha --report lcovonly --hook-run-in-context -- --compilers js:babel-core/register --reporter dot"
+    "test-travis": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover _mocha --report lcovonly --hook-run-in-context -- --compilers js:babel-core/register --reporter dot"
   },
   "keywords": [
     "iso-3166",
