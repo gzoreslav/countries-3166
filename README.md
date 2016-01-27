@@ -23,6 +23,7 @@ Supported languages:
 
 ## Changelog
 
+ - 0.0.25 - increase tests coverage
  - 0.0.24 - modified _toArray_ method to be more useful; add tests
  - 0.0.19 - fix sorting for locales, add _favorites_ method
  - 0.0.18 - add Ukrainian language translations (UA, UKR); fix minor bugs
