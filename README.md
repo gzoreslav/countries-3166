@@ -214,7 +214,7 @@ _Build examples:_
 
 ## Tests
 
-TODO
+    $ npm test
 
 ## Welcome
 
