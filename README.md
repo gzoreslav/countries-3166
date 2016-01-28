@@ -6,6 +6,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][daviddm-url]][daviddm-image]
+[![Gitter](https://badges.gitter.im/gzoreslav/countries-3166.svg)](https://gitter.im/gzoreslav/countries-3166?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Country codes library ([ISO 3166, alpha2 and alpha3](https://en.wikipedia.org/wiki/ISO_3166-1)). All data were get from [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1).
 
