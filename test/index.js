@@ -72,6 +72,9 @@ describe('Countries data', function(){
         countries.init();
         assert.equal(countries.alpha2().translate('ua').values().UA, 'Україна');
         countries.init();
+        assert.equal(countries.translate('de').alpha2().values().TF, 'Französische Süd- und Antarktisgebiete');
+        //no lang key returns unmodified data
+        countries.init();
         assert.equal(countries.translate('usa').values().USA, 'United States of America');
     });
 

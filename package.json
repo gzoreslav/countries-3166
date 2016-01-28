@@ -1,6 +1,6 @@
 {
   "name": "countries-3166",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Country codes library (ISO 3166)",
   "main": "lib/index.js",
   "scripts": {
@@ -22,7 +22,8 @@
     "codes",
     "3166",
     "en",
-    "ua"
+    "ua",
+    "de"
   ],
   "author": {
     "name": "Zoreslav Goral",
