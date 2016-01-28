@@ -1,5 +1,7 @@
 # countries-3166
 
+[![Join the chat at https://gitter.im/gzoreslav/countries-3166](https://badges.gitter.im/gzoreslav/countries-3166.svg)](https://gitter.im/gzoreslav/countries-3166?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![NPM version][npm-image]][npm-url]
 [![Download Count][downloads-image]][downloads-url]
 
