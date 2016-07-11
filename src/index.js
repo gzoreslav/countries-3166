@@ -1,4 +1,11 @@
-import _ from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import map from 'lodash/map';
+import mapValues from 'lodash/mapValues';
+import mapKeys from 'lodash/mapKeys';
+import isArray from 'lodash/isArray';
+import forEachRight from 'lodash/forEachRight';
+import findIndex from 'lodash/findIndex';
+
 import data from './data.js';
 import alpha2 from './alpha2.js';
 import translation from './translation/index.js';
@@ -6,11 +13,11 @@ import translation from './translation/index.js';
 class Countries {
 
     constructor() {
-        this.data = _.cloneDeep(data);
+        this.data = cloneDeep(data);
     }
 
     init() {
-        this.data = _.cloneDeep(data);
+        this.data = cloneDeep(data);
         return this;
     }
 
@@ -19,7 +26,7 @@ class Countries {
     }
 
     toArray() {
-        return _.map(
+        return map(
             this.data,
             (value, key) => {
                 return {code: key, name: value};
@@ -30,15 +37,15 @@ class Countries {
         lang = lang.toUpperCase();
         const transl = translation[lang.length == 2 ? lang : alpha2[lang]] || null;
         if (!transl) return this;
-        this.data = _.mapValues(this.data, (value, key) => key.length === 3 ?
+        this.data = mapValues(this.data, (value, key) => key.length === 3 ?
             transl[alpha2[key]] || value
             : transl[key] || value);
         return this;
     }
 
     _arrayToObject(arr) {
-        return _.cloneDeep(_.mapValues(
-            _.mapKeys(
+        return cloneDeep(mapValues(
+            mapKeys(
                 arr,
                 (value) => value[0]
             ),
@@ -47,7 +54,7 @@ class Countries {
     }
 
     _to2Array() {
-        return _.map(this.data, (value, key) => [key, value]);
+        return map(this.data, (value, key) => [key, value]);
     }
 
     _sort(i) {
@@ -68,16 +75,16 @@ class Countries {
     }
 
     alpha2() {
-        this.data = _.mapKeys(this.data, (value, key) => alpha2[key] || key);
+        this.data = mapKeys(this.data, (value, key) => alpha2[key] || key);
         return this;
     }
 
     favorites(countries) {
-        countries = _.isArray(countries) ? countries : [countries];
+        countries = isArray(countries) ? countries : [countries];
         const arr = this._to2Array();
-        _.forEachRight(countries, (c) => {
+        forEachRight(countries, (c) => {
             c = c.length === 2 ? c.toUpperCase() : alpha2[c.toUpperCase()];
-            const i = _.findIndex(arr, (item) => {
+            const i = findIndex(arr, (item) => {
                 const key = item[0].length === 2 ? item[0] : alpha2[item[0]];
                 return c === key;
             });
